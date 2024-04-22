@@ -1,0 +1,23 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 1.0 (409.60.6)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    def "destroyer" (
+        active = true
+        prepend references = @destroyer.usdz@
+    )
+    {
+        float3 xformOp:scale = (0.001, 0.001, 0.001)
+        float3 xformOp:translate = (-0.00030396404, 0, 0.01383549)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+}
+
