@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		140A6E9E2B741D94002D079E /* studio.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 140A6E9D2B741D94002D079E /* studio.skybox */; };
+		141EA4902BB604CA00A23D03 /* discoveryScene.usda in Resources */ = {isa = PBXBuildFile; fileRef = 141EA48F2BB604CA00A23D03 /* discoveryScene.usda */; };
+		143671A72B68552D00D6ABED /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 143671A62B68552D00D6ABED /* RealityKitContent */; };
+		143671A92B68552D00D6ABED /* iSpaceV2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143671A82B68552D00D6ABED /* iSpaceV2App.swift */; };
+		143671AB2B68552D00D6ABED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143671AA2B68552D00D6ABED /* ContentView.swift */; };
+		143671AD2B68552D00D6ABED /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143671AC2B68552D00D6ABED /* ImmersiveView.swift */; };
+		143671AF2B68552E00D6ABED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143671AE2B68552E00D6ABED /* Assets.xcassets */; };
+		143671B22B68552E00D6ABED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143671B12B68552E00D6ABED /* Preview Assets.xcassets */; };
+		143671BD2B68552E00D6ABED /* iSpaceV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143671BC2B68552E00D6ABED /* iSpaceV2Tests.swift */; };
+		143671C92B6C70C000D6ABED /* Mars.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 143671C82B6C70C000D6ABED /* Mars.usdz */; };
+		143671CB2B6C70C400D6ABED /* Moon.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 143671CA2B6C70C400D6ABED /* Moon.usdz */; };
+		14405D572BA6EE910079E6F5 /* SkyBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14405D562BA6EE910079E6F5 /* SkyBoxView.swift */; };
+		14405D5D2BA8EFE30079E6F5 /* Saturn.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14405D5C2BA8EFE30079E6F5 /* Saturn.usdz */; };
+		14405D6B2BA8FE200079E6F5 /* earthScene.usda in Resources */ = {isa = PBXBuildFile; fileRef = 14405D6A2BA8FE200079E6F5 /* earthScene.usda */; };
+		14405D6D2BA900A70079E6F5 /* SaturnV_carbajal.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14405D6C2BA900A70079E6F5 /* SaturnV_carbajal.usdz */; };
+		14405D6F2BA901290079E6F5 /* destroyer.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14405D6E2BA901290079E6F5 /* destroyer.usdz */; };
+		14405D712BA901D80079E6F5 /* destroyerScene.usda in Resources */ = {isa = PBXBuildFile; fileRef = 14405D702BA901D70079E6F5 /* destroyerScene.usda */; };
+		14405D782BAA63C30079E6F5 /* Jupiter.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14405D772BAA63C30079E6F5 /* Jupiter.usdz */; };
+		14405D7A2BAA63EF0079E6F5 /* Mercury.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14405D792BAA63EF0079E6F5 /* Mercury.usdz */; };
+		14405D7C2BAA64040079E6F5 /* Venus.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14405D7B2BAA64040079E6F5 /* Venus.usdz */; };
+		14405D7E2BAA64420079E6F5 /* Uranus.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14405D7D2BAA64420079E6F5 /* Uranus.usdz */; };
+		14405D802BAA64500079E6F5 /* Neptune.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14405D7F2BAA64500079E6F5 /* Neptune.usdz */; };
+		145CF8ED2BBCA1940059879E /* ISSScene.usda in Resources */ = {isa = PBXBuildFile; fileRef = 145CF8EC2BBCA1940059879E /* ISSScene.usda */; };
+		145CF8EF2BBCA7320059879E /* ISSScene2.usda in Resources */ = {isa = PBXBuildFile; fileRef = 145CF8EE2BBCA7320059879E /* ISSScene2.usda */; };
+		145CF8F12BBCAA4E0059879E /* WebbScene.usda in Resources */ = {isa = PBXBuildFile; fileRef = 145CF8F02BBCAA4E0059879E /* WebbScene.usda */; };
+		145CF8F32BBCADD40059879E /* sputnikScene.usda in Resources */ = {isa = PBXBuildFile; fileRef = 145CF8F22BBCADD40059879E /* sputnikScene.usda */; };
+		145CF9012BBF45F60059879E /* millennium_falcon.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 145CF8F92BBF45F60059879E /* millennium_falcon.usdz */; };
+		145CF9052BC49BDD0059879E /* borgScene.usda in Resources */ = {isa = PBXBuildFile; fileRef = 145CF9042BC49BDD0059879E /* borgScene.usda */; };
+		145CF9072BC49DDB0059879E /* enterpriseScene.usda in Resources */ = {isa = PBXBuildFile; fileRef = 145CF9062BC49DDB0059879E /* enterpriseScene.usda */; };
+		145CF9092BC4A9140059879E /* deathScene.usda in Resources */ = {isa = PBXBuildFile; fileRef = 145CF9082BC4A9140059879E /* deathScene.usda */; };
+		145CF90B2BC4AA460059879E /* haloScene.usda in Resources */ = {isa = PBXBuildFile; fileRef = 145CF90A2BC4AA460059879E /* haloScene.usda */; };
+		145CF90D2BC4B5850059879E /* expressScene.usda in Resources */ = {isa = PBXBuildFile; fileRef = 145CF90C2BC4B5850059879E /* expressScene.usda */; };
+		145CF90F2BC4B7180059879E /* expressScene2.usda in Resources */ = {isa = PBXBuildFile; fileRef = 145CF90E2BC4B7180059879E /* expressScene2.usda */; };
+		145CF9112BC4B8300059879E /* falconScene.usda in Resources */ = {isa = PBXBuildFile; fileRef = 145CF9102BC4B8300059879E /* falconScene.usda */; };
+		145CF9132BC4BA600059879E /* tieScene.usda in Resources */ = {isa = PBXBuildFile; fileRef = 145CF9122BC4BA600059879E /* tieScene.usda */; };
+		14C0CAE12BCEFBCC00B1A405 /* Discovery_Shuttle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CAE02BCEFBCC00B1A405 /* Discovery_Shuttle.usdz */; };
+		14C0CAE32BCEFBE800B1A405 /* Falcon_9_Rocket.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CAE22BCEFBE800B1A405 /* Falcon_9_Rocket.usdz */; };
+		14C0CAE52BCEFBEF00B1A405 /* ISS.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CAE42BCEFBEF00B1A405 /* ISS.usdz */; };
+		14C0CAE72BCEFBF600B1A405 /* James_Webb_Space_Telescope.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CAE62BCEFBF600B1A405 /* James_Webb_Space_Telescope.usdz */; };
+		14C0CAE92BCEFBFE00B1A405 /* SaturnV.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CAE82BCEFBFE00B1A405 /* SaturnV.usdz */; };
+		14C0CAEB2BCEFC0500B1A405 /* sputnik.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CAEA2BCEFC0500B1A405 /* sputnik.usdz */; };
+		14C0CAED2BCEFC1D00B1A405 /* deathComb.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CAEC2BCEFC1D00B1A405 /* deathComb.usdz */; };
+		14C0CAEF2BCEFC2F00B1A405 /* falconComb.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CAEE2BCEFC2F00B1A405 /* falconComb.usdz */; };
+		14C0CAF12BCEFC4200B1A405 /* discoveryComb.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CAF02BCEFC4200B1A405 /* discoveryComb.usdz */; };
+		14C0CAF92BCEFE9900B1A405 /* earth3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CAF82BCEFE9900B1A405 /* earth3.usdz */; };
+		14C0CAFB2BCEFED600B1A405 /* haloComb.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CAFA2BCEFED600B1A405 /* haloComb.usdz */; };
+		14C0CAFD2BCEFEE900B1A405 /* millenniumComb.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CAFC2BCEFEE900B1A405 /* millenniumComb.usdz */; };
+		14C0CAFF2BCEFEF700B1A405 /* destroyerCombObj.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CAFE2BCEFEF700B1A405 /* destroyerCombObj.usdz */; };
+		14C0CB012BCF02A400B1A405 /* discoveryCombFix.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB002BCF02A400B1A405 /* discoveryCombFix.usdz */; };
+		14C0CB032BCF02B800B1A405 /* ISSCombFix.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB022BCF02B800B1A405 /* ISSCombFix.usdz */; };
+		14C0CB052BCF02CA00B1A405 /* millenniumCombFix.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB042BCF02CA00B1A405 /* millenniumCombFix.usdz */; };
+		14C0CB072BCF02ED00B1A405 /* sputnikCombFix.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB062BCF02ED00B1A405 /* sputnikCombFix.usdz */; };
+		14C0CB092BCF02F400B1A405 /* falconCombFix.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB082BCF02F400B1A405 /* falconCombFix.usdz */; };
+		14C0CB0B2BCF031B00B1A405 /* Borg_Cube.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB0A2BCF031B00B1A405 /* Borg_Cube.usdz */; };
+		14C0CB0D2BCF033200B1A405 /* Death_Star.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB0C2BCF033200B1A405 /* Death_Star.usdz */; };
+		14C0CB0F2BCF034700B1A405 /* enterprise.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB0E2BCF034700B1A405 /* enterprise.usdz */; };
+		14C0CB112BCF034F00B1A405 /* Halo.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB102BCF034F00B1A405 /* Halo.usdz */; };
+		14C0CB132BCF036200B1A405 /* Planet_Express_SpaceShip.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB122BCF036200B1A405 /* Planet_Express_SpaceShip.usdz */; };
+		14C0CB152BCF038300B1A405 /* tardis.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB142BCF038300B1A405 /* tardis.usdz */; };
+		14C0CB172BCF039100B1A405 /* TIE.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB162BCF039100B1A405 /* TIE.usdz */; };
+		14C0CB192BCF03AC00B1A405 /* borgCombObj.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB182BCF03AC00B1A405 /* borgCombObj.usdz */; };
+		14C0CB1B2BCF03DE00B1A405 /* tardisCombObj.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB1A2BCF03DE00B1A405 /* tardisCombObj.usdz */; };
+		14C0CB1D2BCF03F600B1A405 /* TieCombObj.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB1C2BCF03F600B1A405 /* TieCombObj.usdz */; };
+		14C0CB1F2BCF041100B1A405 /* EnterpriseCombObj.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 14C0CB1E2BCF041100B1A405 /* EnterpriseCombObj.usdz */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		143671B92B68552E00D6ABED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 143671992B68552D00D6ABED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 143671A02B68552D00D6ABED;
+			remoteInfo = iSpaceV2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		140A6E9D2B741D94002D079E /* studio.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; name = studio.skybox; path = ../../studio.skybox; sourceTree = "<group>"; };
+		141EA48F2BB604CA00A23D03 /* discoveryScene.usda */ = {isa = PBXFileReference; lastKnownFileType = text; name = discoveryScene.usda; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/discoveryScene.usda; sourceTree = SOURCE_ROOT; };
+		143671A12B68552D00D6ABED /* iSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		143671A52B68552D00D6ABED /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		143671A82B68552D00D6ABED /* iSpaceV2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSpaceV2App.swift; sourceTree = "<group>"; };
+		143671AA2B68552D00D6ABED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		143671AC2B68552D00D6ABED /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		143671AE2B68552E00D6ABED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		143671B12B68552E00D6ABED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		143671B32B68552E00D6ABED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143671B82B68552E00D6ABED /* iSpaceV2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSpaceV2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		143671BC2B68552E00D6ABED /* iSpaceV2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSpaceV2Tests.swift; sourceTree = "<group>"; };
+		143671C82B6C70C000D6ABED /* Mars.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Mars.usdz; path = iSpaceV2/models/Mars.usdz; sourceTree = SOURCE_ROOT; };
+		143671CA2B6C70C400D6ABED /* Moon.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Moon.usdz; path = iSpaceV2/models/Moon.usdz; sourceTree = SOURCE_ROOT; };
+		14405D562BA6EE910079E6F5 /* SkyBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyBoxView.swift; sourceTree = "<group>"; };
+		14405D5C2BA8EFE30079E6F5 /* Saturn.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Saturn.usdz; path = iSpaceV2/models/Saturn.usdz; sourceTree = SOURCE_ROOT; };
+		14405D6A2BA8FE200079E6F5 /* earthScene.usda */ = {isa = PBXFileReference; lastKnownFileType = text; name = earthScene.usda; path = iSpaceV2/models/earthScene.usda; sourceTree = SOURCE_ROOT; };
+		14405D6C2BA900A70079E6F5 /* SaturnV_carbajal.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = SaturnV_carbajal.usdz; sourceTree = "<group>"; };
+		14405D6E2BA901290079E6F5 /* destroyer.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = destroyer.usdz; sourceTree = "<group>"; };
+		14405D702BA901D70079E6F5 /* destroyerScene.usda */ = {isa = PBXFileReference; lastKnownFileType = text; name = destroyerScene.usda; path = iSpaceV2/models/destroyerScene.usda; sourceTree = SOURCE_ROOT; };
+		14405D772BAA63C30079E6F5 /* Jupiter.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Jupiter.usdz; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/Jupiter.usdz; sourceTree = SOURCE_ROOT; };
+		14405D792BAA63EF0079E6F5 /* Mercury.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Mercury.usdz; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/Mercury.usdz; sourceTree = SOURCE_ROOT; };
+		14405D7B2BAA64040079E6F5 /* Venus.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Venus.usdz; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/Venus.usdz; sourceTree = SOURCE_ROOT; };
+		14405D7D2BAA64420079E6F5 /* Uranus.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Uranus.usdz; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/Uranus.usdz; sourceTree = SOURCE_ROOT; };
+		14405D7F2BAA64500079E6F5 /* Neptune.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Neptune.usdz; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/Neptune.usdz; sourceTree = SOURCE_ROOT; };
+		145CF8EC2BBCA1940059879E /* ISSScene.usda */ = {isa = PBXFileReference; lastKnownFileType = text; name = ISSScene.usda; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/ISSScene.usda; sourceTree = SOURCE_ROOT; };
+		145CF8EE2BBCA7320059879E /* ISSScene2.usda */ = {isa = PBXFileReference; lastKnownFileType = text; name = ISSScene2.usda; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/ISSScene2.usda; sourceTree = SOURCE_ROOT; };
+		145CF8F02BBCAA4E0059879E /* WebbScene.usda */ = {isa = PBXFileReference; lastKnownFileType = text; name = WebbScene.usda; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/WebbScene.usda; sourceTree = SOURCE_ROOT; };
+		145CF8F22BBCADD40059879E /* sputnikScene.usda */ = {isa = PBXFileReference; lastKnownFileType = text; name = sputnikScene.usda; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/sputnikScene.usda; sourceTree = SOURCE_ROOT; };
+		145CF8F92BBF45F60059879E /* millennium_falcon.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = millennium_falcon.usdz; path = ../../../../Downloads/fiction/millennium_falcon.usdz; sourceTree = "<group>"; };
+		145CF9042BC49BDD0059879E /* borgScene.usda */ = {isa = PBXFileReference; lastKnownFileType = text; name = borgScene.usda; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/borgScene.usda; sourceTree = SOURCE_ROOT; };
+		145CF9062BC49DDB0059879E /* enterpriseScene.usda */ = {isa = PBXFileReference; lastKnownFileType = text; name = enterpriseScene.usda; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/enterpriseScene.usda; sourceTree = SOURCE_ROOT; };
+		145CF9082BC4A9140059879E /* deathScene.usda */ = {isa = PBXFileReference; lastKnownFileType = text; name = deathScene.usda; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/deathScene.usda; sourceTree = SOURCE_ROOT; };
+		145CF90A2BC4AA460059879E /* haloScene.usda */ = {isa = PBXFileReference; lastKnownFileType = text; name = haloScene.usda; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/haloScene.usda; sourceTree = SOURCE_ROOT; };
+		145CF90C2BC4B5850059879E /* expressScene.usda */ = {isa = PBXFileReference; lastKnownFileType = text; name = expressScene.usda; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/expressScene.usda; sourceTree = SOURCE_ROOT; };
+		145CF90E2BC4B7180059879E /* expressScene2.usda */ = {isa = PBXFileReference; lastKnownFileType = text; name = expressScene2.usda; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/expressScene2.usda; sourceTree = SOURCE_ROOT; };
+		145CF9102BC4B8300059879E /* falconScene.usda */ = {isa = PBXFileReference; lastKnownFileType = text; name = falconScene.usda; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/falconScene.usda; sourceTree = SOURCE_ROOT; };
+		145CF9122BC4BA600059879E /* tieScene.usda */ = {isa = PBXFileReference; lastKnownFileType = text; name = tieScene.usda; path = Packages/RealityKitContent/Sources/RealityKitContent/RealityKitContent.rkassets/tieScene.usda; sourceTree = SOURCE_ROOT; };
+		14C0CAE02BCEFBCC00B1A405 /* Discovery_Shuttle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Discovery_Shuttle.usdz; sourceTree = "<group>"; };
+		14C0CAE22BCEFBE800B1A405 /* Falcon_9_Rocket.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Falcon_9_Rocket.usdz; sourceTree = "<group>"; };
+		14C0CAE42BCEFBEF00B1A405 /* ISS.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = ISS.usdz; sourceTree = "<group>"; };
+		14C0CAE62BCEFBF600B1A405 /* James_Webb_Space_Telescope.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = James_Webb_Space_Telescope.usdz; sourceTree = "<group>"; };
+		14C0CAE82BCEFBFE00B1A405 /* SaturnV.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = SaturnV.usdz; sourceTree = "<group>"; };
+		14C0CAEA2BCEFC0500B1A405 /* sputnik.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = sputnik.usdz; sourceTree = "<group>"; };
+		14C0CAEC2BCEFC1D00B1A405 /* deathComb.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = deathComb.usdz; sourceTree = "<group>"; };
+		14C0CAEE2BCEFC2F00B1A405 /* falconComb.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = falconComb.usdz; sourceTree = "<group>"; };
+		14C0CAF02BCEFC4200B1A405 /* discoveryComb.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = discoveryComb.usdz; sourceTree = "<group>"; };
+		14C0CAF82BCEFE9900B1A405 /* earth3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = earth3.usdz; sourceTree = "<group>"; };
+		14C0CAFA2BCEFED600B1A405 /* haloComb.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = haloComb.usdz; sourceTree = "<group>"; };
+		14C0CAFC2BCEFEE900B1A405 /* millenniumComb.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = millenniumComb.usdz; sourceTree = "<group>"; };
+		14C0CAFE2BCEFEF700B1A405 /* destroyerCombObj.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = destroyerCombObj.usdz; sourceTree = "<group>"; };
+		14C0CB002BCF02A400B1A405 /* discoveryCombFix.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = discoveryCombFix.usdz; sourceTree = "<group>"; };
+		14C0CB022BCF02B800B1A405 /* ISSCombFix.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = ISSCombFix.usdz; sourceTree = "<group>"; };
+		14C0CB042BCF02CA00B1A405 /* millenniumCombFix.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = millenniumCombFix.usdz; sourceTree = "<group>"; };
+		14C0CB062BCF02ED00B1A405 /* sputnikCombFix.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = sputnikCombFix.usdz; sourceTree = "<group>"; };
+		14C0CB082BCF02F400B1A405 /* falconCombFix.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = falconCombFix.usdz; sourceTree = "<group>"; };
+		14C0CB0A2BCF031B00B1A405 /* Borg_Cube.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Borg_Cube.usdz; sourceTree = "<group>"; };
+		14C0CB0C2BCF033200B1A405 /* Death_Star.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Death_Star.usdz; sourceTree = "<group>"; };
+		14C0CB0E2BCF034700B1A405 /* enterprise.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = enterprise.usdz; sourceTree = "<group>"; };
+		14C0CB102BCF034F00B1A405 /* Halo.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Halo.usdz; sourceTree = "<group>"; };
+		14C0CB122BCF036200B1A405 /* Planet_Express_SpaceShip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Planet_Express_SpaceShip.usdz; sourceTree = "<group>"; };
+		14C0CB142BCF038300B1A405 /* tardis.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tardis.usdz; sourceTree = "<group>"; };
+		14C0CB162BCF039100B1A405 /* TIE.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = TIE.usdz; sourceTree = "<group>"; };
+		14C0CB182BCF03AC00B1A405 /* borgCombObj.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = borgCombObj.usdz; sourceTree = "<group>"; };
+		14C0CB1A2BCF03DE00B1A405 /* tardisCombObj.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tardisCombObj.usdz; sourceTree = "<group>"; };
+		14C0CB1C2BCF03F600B1A405 /* TieCombObj.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = TieCombObj.usdz; sourceTree = "<group>"; };
+		14C0CB1E2BCF041100B1A405 /* EnterpriseCombObj.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = EnterpriseCombObj.usdz; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1436719E2B68552D00D6ABED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143671A72B68552D00D6ABED /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143671B52B68552E00D6ABED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		143671982B68552D00D6ABED = {
+			isa = PBXGroup;
+			children = (
+				143671A32B68552D00D6ABED /* iSpaceV2 */,
+				143671A42B68552D00D6ABED /* Packages */,
+				143671BB2B68552E00D6ABED /* iSpaceV2Tests */,
+				143671A22B68552D00D6ABED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		143671A22B68552D00D6ABED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				143671A12B68552D00D6ABED /* iSpace.app */,
+				143671B82B68552E00D6ABED /* iSpaceV2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		143671A32B68552D00D6ABED /* iSpaceV2 */ = {
+			isa = PBXGroup;
+			children = (
+				140A6E9D2B741D94002D079E /* studio.skybox */,
+				143671A82B68552D00D6ABED /* iSpaceV2App.swift */,
+				143671AA2B68552D00D6ABED /* ContentView.swift */,
+				143671AC2B68552D00D6ABED /* ImmersiveView.swift */,
+				14405D562BA6EE910079E6F5 /* SkyBoxView.swift */,
+				14405D762BAA24FC0079E6F5 /* models */,
+				143671AE2B68552E00D6ABED /* Assets.xcassets */,
+				143671B32B68552E00D6ABED /* Info.plist */,
+				143671B02B68552E00D6ABED /* Preview Content */,
+			);
+			path = iSpaceV2;
+			sourceTree = "<group>";
+		};
+		143671A42B68552D00D6ABED /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				143671A52B68552D00D6ABED /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		143671B02B68552E00D6ABED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				143671B12B68552E00D6ABED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		143671BB2B68552E00D6ABED /* iSpaceV2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				143671BC2B68552E00D6ABED /* iSpaceV2Tests.swift */,
+			);
+			path = iSpaceV2Tests;
+			sourceTree = "<group>";
+		};
+		14405D762BAA24FC0079E6F5 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				145CF9062BC49DDB0059879E /* enterpriseScene.usda */,
+				145CF9042BC49BDD0059879E /* borgScene.usda */,
+				141EA48F2BB604CA00A23D03 /* discoveryScene.usda */,
+				14C0CAE02BCEFBCC00B1A405 /* Discovery_Shuttle.usdz */,
+				14C0CAE22BCEFBE800B1A405 /* Falcon_9_Rocket.usdz */,
+				14C0CAE42BCEFBEF00B1A405 /* ISS.usdz */,
+				14C0CAF02BCEFC4200B1A405 /* discoveryComb.usdz */,
+				14C0CAEC2BCEFC1D00B1A405 /* deathComb.usdz */,
+				14C0CAEE2BCEFC2F00B1A405 /* falconComb.usdz */,
+				14C0CAE82BCEFBFE00B1A405 /* SaturnV.usdz */,
+				14C0CAE62BCEFBF600B1A405 /* James_Webb_Space_Telescope.usdz */,
+				14C0CAEA2BCEFC0500B1A405 /* sputnik.usdz */,
+				14405D702BA901D70079E6F5 /* destroyerScene.usda */,
+				14C0CAF82BCEFE9900B1A405 /* earth3.usdz */,
+				14405D6E2BA901290079E6F5 /* destroyer.usdz */,
+				14405D6C2BA900A70079E6F5 /* SaturnV_carbajal.usdz */,
+				14C0CAFE2BCEFEF700B1A405 /* destroyerCombObj.usdz */,
+				143671C82B6C70C000D6ABED /* Mars.usdz */,
+				14405D792BAA63EF0079E6F5 /* Mercury.usdz */,
+				14C0CAFC2BCEFEE900B1A405 /* millenniumComb.usdz */,
+				14C0CAFA2BCEFED600B1A405 /* haloComb.usdz */,
+				14405D5C2BA8EFE30079E6F5 /* Saturn.usdz */,
+				143671CA2B6C70C400D6ABED /* Moon.usdz */,
+				145CF8EC2BBCA1940059879E /* ISSScene.usda */,
+				14C0CB002BCF02A400B1A405 /* discoveryCombFix.usdz */,
+				14405D772BAA63C30079E6F5 /* Jupiter.usdz */,
+				14C0CB042BCF02CA00B1A405 /* millenniumCombFix.usdz */,
+				14C0CB022BCF02B800B1A405 /* ISSCombFix.usdz */,
+				14C0CB062BCF02ED00B1A405 /* sputnikCombFix.usdz */,
+				14C0CB082BCF02F400B1A405 /* falconCombFix.usdz */,
+				14405D6A2BA8FE200079E6F5 /* earthScene.usda */,
+				14405D7B2BAA64040079E6F5 /* Venus.usdz */,
+				14405D7D2BAA64420079E6F5 /* Uranus.usdz */,
+				14C0CB0C2BCF033200B1A405 /* Death_Star.usdz */,
+				14405D7F2BAA64500079E6F5 /* Neptune.usdz */,
+				145CF8EE2BBCA7320059879E /* ISSScene2.usda */,
+				14C0CB0A2BCF031B00B1A405 /* Borg_Cube.usdz */,
+				14C0CB102BCF034F00B1A405 /* Halo.usdz */,
+				14C0CB0E2BCF034700B1A405 /* enterprise.usdz */,
+				145CF8F22BBCADD40059879E /* sputnikScene.usda */,
+				14C0CB122BCF036200B1A405 /* Planet_Express_SpaceShip.usdz */,
+				145CF9082BC4A9140059879E /* deathScene.usda */,
+				145CF8F92BBF45F60059879E /* millennium_falcon.usdz */,
+				14C0CB142BCF038300B1A405 /* tardis.usdz */,
+				14C0CB162BCF039100B1A405 /* TIE.usdz */,
+				14C0CB182BCF03AC00B1A405 /* borgCombObj.usdz */,
+				145CF90C2BC4B5850059879E /* expressScene.usda */,
+				145CF90E2BC4B7180059879E /* expressScene2.usda */,
+				145CF9102BC4B8300059879E /* falconScene.usda */,
+				14C0CB1A2BCF03DE00B1A405 /* tardisCombObj.usdz */,
+				145CF90A2BC4AA460059879E /* haloScene.usda */,
+				145CF9122BC4BA600059879E /* tieScene.usda */,
+				14C0CB1C2BCF03F600B1A405 /* TieCombObj.usdz */,
+				145CF8F02BBCAA4E0059879E /* WebbScene.usda */,
+				14C0CB1E2BCF041100B1A405 /* EnterpriseCombObj.usdz */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		143671A02B68552D00D6ABED /* iSpaceV2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143671C02B68552E00D6ABED /* Build configuration list for PBXNativeTarget "iSpaceV2" */;
+			buildPhases = (
+				1436719D2B68552D00D6ABED /* Sources */,
+				1436719E2B68552D00D6ABED /* Frameworks */,
+				1436719F2B68552D00D6ABED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSpaceV2;
+			packageProductDependencies = (
+				143671A62B68552D00D6ABED /* RealityKitContent */,
+			);
+			productName = iSpaceV2;
+			productReference = 143671A12B68552D00D6ABED /* iSpace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		143671B72B68552E00D6ABED /* iSpaceV2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143671C32B68552E00D6ABED /* Build configuration list for PBXNativeTarget "iSpaceV2Tests" */;
+			buildPhases = (
+				143671B42B68552E00D6ABED /* Sources */,
+				143671B52B68552E00D6ABED /* Frameworks */,
+				143671B62B68552E00D6ABED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				143671BA2B68552E00D6ABED /* PBXTargetDependency */,
+			);
+			name = iSpaceV2Tests;
+			productName = iSpaceV2Tests;
+			productReference = 143671B82B68552E00D6ABED /* iSpaceV2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		143671992B68552D00D6ABED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					143671A02B68552D00D6ABED = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					143671B72B68552E00D6ABED = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 143671A02B68552D00D6ABED;
+					};
+				};
+			};
+			buildConfigurationList = 1436719C2B68552D00D6ABED /* Build configuration list for PBXProject "iSpaceV2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 143671982B68552D00D6ABED;
+			productRefGroup = 143671A22B68552D00D6ABED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				143671A02B68552D00D6ABED /* iSpaceV2 */,
+				143671B72B68552E00D6ABED /* iSpaceV2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1436719F2B68552D00D6ABED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C0CAE12BCEFBCC00B1A405 /* Discovery_Shuttle.usdz in Resources */,
+				14C0CB132BCF036200B1A405 /* Planet_Express_SpaceShip.usdz in Resources */,
+				14C0CB092BCF02F400B1A405 /* falconCombFix.usdz in Resources */,
+				145CF8EF2BBCA7320059879E /* ISSScene2.usda in Resources */,
+				145CF9052BC49BDD0059879E /* borgScene.usda in Resources */,
+				14405D5D2BA8EFE30079E6F5 /* Saturn.usdz in Resources */,
+				14C0CAF12BCEFC4200B1A405 /* discoveryComb.usdz in Resources */,
+				145CF90D2BC4B5850059879E /* expressScene.usda in Resources */,
+				14C0CB0D2BCF033200B1A405 /* Death_Star.usdz in Resources */,
+				14405D7E2BAA64420079E6F5 /* Uranus.usdz in Resources */,
+				14C0CB1D2BCF03F600B1A405 /* TieCombObj.usdz in Resources */,
+				14C0CB012BCF02A400B1A405 /* discoveryCombFix.usdz in Resources */,
+				14405D6F2BA901290079E6F5 /* destroyer.usdz in Resources */,
+				145CF9132BC4BA600059879E /* tieScene.usda in Resources */,
+				14405D6D2BA900A70079E6F5 /* SaturnV_carbajal.usdz in Resources */,
+				14C0CB0B2BCF031B00B1A405 /* Borg_Cube.usdz in Resources */,
+				14C0CAF92BCEFE9900B1A405 /* earth3.usdz in Resources */,
+				14C0CB052BCF02CA00B1A405 /* millenniumCombFix.usdz in Resources */,
+				14C0CAED2BCEFC1D00B1A405 /* deathComb.usdz in Resources */,
+				145CF9012BBF45F60059879E /* millennium_falcon.usdz in Resources */,
+				14C0CAE52BCEFBEF00B1A405 /* ISS.usdz in Resources */,
+				14C0CB1F2BCF041100B1A405 /* EnterpriseCombObj.usdz in Resources */,
+				143671CB2B6C70C400D6ABED /* Moon.usdz in Resources */,
+				14405D802BAA64500079E6F5 /* Neptune.usdz in Resources */,
+				143671C92B6C70C000D6ABED /* Mars.usdz in Resources */,
+				14C0CAE92BCEFBFE00B1A405 /* SaturnV.usdz in Resources */,
+				14C0CB1B2BCF03DE00B1A405 /* tardisCombObj.usdz in Resources */,
+				14C0CAFB2BCEFED600B1A405 /* haloComb.usdz in Resources */,
+				141EA4902BB604CA00A23D03 /* discoveryScene.usda in Resources */,
+				14C0CB072BCF02ED00B1A405 /* sputnikCombFix.usdz in Resources */,
+				14C0CB112BCF034F00B1A405 /* Halo.usdz in Resources */,
+				14C0CB172BCF039100B1A405 /* TIE.usdz in Resources */,
+				14C0CAFF2BCEFEF700B1A405 /* destroyerCombObj.usdz in Resources */,
+				14C0CB152BCF038300B1A405 /* tardis.usdz in Resources */,
+				145CF9072BC49DDB0059879E /* enterpriseScene.usda in Resources */,
+				143671B22B68552E00D6ABED /* Preview Assets.xcassets in Resources */,
+				14405D7C2BAA64040079E6F5 /* Venus.usdz in Resources */,
+				14C0CAE32BCEFBE800B1A405 /* Falcon_9_Rocket.usdz in Resources */,
+				143671AF2B68552E00D6ABED /* Assets.xcassets in Resources */,
+				145CF9112BC4B8300059879E /* falconScene.usda in Resources */,
+				14C0CAEB2BCEFC0500B1A405 /* sputnik.usdz in Resources */,
+				145CF8ED2BBCA1940059879E /* ISSScene.usda in Resources */,
+				145CF8F12BBCAA4E0059879E /* WebbScene.usda in Resources */,
+				14C0CB192BCF03AC00B1A405 /* borgCombObj.usdz in Resources */,
+				145CF90F2BC4B7180059879E /* expressScene2.usda in Resources */,
+				140A6E9E2B741D94002D079E /* studio.skybox in Resources */,
+				14C0CAEF2BCEFC2F00B1A405 /* falconComb.usdz in Resources */,
+				14405D782BAA63C30079E6F5 /* Jupiter.usdz in Resources */,
+				145CF90B2BC4AA460059879E /* haloScene.usda in Resources */,
+				14C0CAFD2BCEFEE900B1A405 /* millenniumComb.usdz in Resources */,
+				14405D712BA901D80079E6F5 /* destroyerScene.usda in Resources */,
+				14405D6B2BA8FE200079E6F5 /* earthScene.usda in Resources */,
+				14C0CB032BCF02B800B1A405 /* ISSCombFix.usdz in Resources */,
+				14C0CB0F2BCF034700B1A405 /* enterprise.usdz in Resources */,
+				145CF9092BC4A9140059879E /* deathScene.usda in Resources */,
+				14405D7A2BAA63EF0079E6F5 /* Mercury.usdz in Resources */,
+				14C0CAE72BCEFBF600B1A405 /* James_Webb_Space_Telescope.usdz in Resources */,
+				145CF8F32BBCADD40059879E /* sputnikScene.usda in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143671B62B68552E00D6ABED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1436719D2B68552D00D6ABED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143671AB2B68552D00D6ABED /* ContentView.swift in Sources */,
+				143671A92B68552D00D6ABED /* iSpaceV2App.swift in Sources */,
+				14405D572BA6EE910079E6F5 /* SkyBoxView.swift in Sources */,
+				143671AD2B68552D00D6ABED /* ImmersiveView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143671B42B68552E00D6ABED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143671BD2B68552E00D6ABED /* iSpaceV2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		143671BA2B68552E00D6ABED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 143671A02B68552D00D6ABED /* iSpaceV2 */;
+			targetProxy = 143671B92B68552E00D6ABED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		143671BE2B68552E00D6ABED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		143671BF2B68552E00D6ABED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+		143671C12B68552E00D6ABED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iSpaceV2/Preview Content\"";
+				DEVELOPMENT_TEAM = QT33HKQSW6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iSpace.iSpaceV2;
+				PRODUCT_NAME = iSpace;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		143671C22B68552E00D6ABED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iSpaceV2/Preview Content\"";
+				DEVELOPMENT_TEAM = QT33HKQSW6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iSpace.iSpaceV2;
+				PRODUCT_NAME = iSpace;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		143671C42B68552E00D6ABED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iSpace.iSpaceV2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSpaceV2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iSpaceV2";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Debug;
+		};
+		143671C52B68552E00D6ABED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iSpace.iSpaceV2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iSpaceV2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iSpaceV2";
+				XROS_DEPLOYMENT_TARGET = 1.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1436719C2B68552D00D6ABED /* Build configuration list for PBXProject "iSpaceV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143671BE2B68552E00D6ABED /* Debug */,
+				143671BF2B68552E00D6ABED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		143671C02B68552E00D6ABED /* Build configuration list for PBXNativeTarget "iSpaceV2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143671C12B68552E00D6ABED /* Debug */,
+				143671C22B68552E00D6ABED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		143671C32B68552E00D6ABED /* Build configuration list for PBXNativeTarget "iSpaceV2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143671C42B68552E00D6ABED /* Debug */,
+				143671C52B68552E00D6ABED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		143671A62B68552D00D6ABED /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 143671992B68552D00D6ABED /* Project object */;
+}
