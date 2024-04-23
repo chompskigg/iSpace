@@ -10,14 +10,20 @@ Tools needed:
 
 How to install: 
 1. Click the "Code" drop down and download the project (or clone the repository with Git)
-   a. "git clone <repository_url>"
-2. Open Xcode
-3. Open project in Xcode. Navigate to downloaded project and click on the ".xcodeproj" or ".xcworkspace"
-4. Once the project opens, select a simulator or device (under the ▶︎ drop down)
+   
+   a. "git clone https://github.com/chompskigg/iSpace.git"
+   
+3. Open Xcode
+4. Open project in Xcode. Navigate to downloaded project and click on the ".xcodeproj" or ".xcworkspace"
+5. Once the project opens, select a simulator or device (under the ▶︎ drop down)
+   
    a. If you do not have a Vision Pro then you can run the Xcode Vision Pro simulator
-5. Launch the project and wait for it to build and compile (this may take a while)
+   
+7. Launch the project and wait for it to build and compile (this may take a while)
+   
    a. If you are running the project on the Vision Pro hardware make sure you are connected to the device and have a strong internet connection before building
-6. Finished! If you have further problems let us know on our support page.
+   
+9. Finished! If you have further problems let us know on our support page.
 
 [Support Page](https://projects.nmi.cool/2024/nmc/ispace/support) 
 
