@@ -19,7 +19,7 @@ How to install:
    a. If you are running the project on the Vision Pro hardware make sure you are connected to the device and have a strong internet connection before building
 6. Finished! If you have further problems let us know on our support page.
 
-[Support Page](https://projects.nmi.cool/2024/nmc/ispace/support)
+[Support Page](https://projects.nmi.cool/2024/nmc/ispace/support) 
 [Privacy Page](https://projects.nmi.cool/2024/nmc/ispace/privacy)
 
 [Sources for models](https://docs.google.com/document/d/1-NUpOEKobdGNJEdYwQac6G8zl5MmdL7FYNdZNSKvXDo/edit?usp=sharing).
