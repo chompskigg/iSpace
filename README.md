@@ -23,4 +23,4 @@ How to install:
 
 [Privacy Page](https://projects.nmi.cool/2024/nmc/ispace/privacy)
 
-[Sources for models](https://docs.google.com/document/d/1-NUpOEKobdGNJEdYwQac6G8zl5MmdL7FYNdZNSKvXDo/edit?usp=sharing).
+[Sources for models](https://docs.google.com/document/d/1-NUpOEKobdGNJEdYwQac6G8zl5MmdL7FYNdZNSKvXDo/edit?usp=sharing)
